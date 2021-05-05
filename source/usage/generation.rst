@@ -132,9 +132,13 @@ Shape Examples
 
 .. topic:: Example: Generating various shapes
 
-    Torus of major radius 0.75 and minor radius 0.25::
+    Vertical torus of major radius 0.75 and minor radius 0.25::
 
         //g stone (0.75-sqrt(x^2+y^2))^2+z^2 < 0.25^2
+    
+    To make it horizontal just swap y and z variables::
+    
+        //g stone (0.75-sqrt(x^2+z^2))^2+y^2 < 0.25^2
 
     Gnarled hollow tree::
 
